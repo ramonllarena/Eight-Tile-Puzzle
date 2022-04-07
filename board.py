@@ -1,16 +1,3 @@
-#
-# board.py (Final project)
-#
-# A Board class for the Eight Puzzle
-#
-# name: Ramon Llarena
-# email: llar011@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
-#
-
 # a 2-D list that corresponds to the tiles in the goal state
 GOAL_TILES = [['0', '1', '2'],
               ['3', '4', '5'],
