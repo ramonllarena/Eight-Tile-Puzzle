@@ -1,16 +1,3 @@
-#
-# searcher.py (Final project)
-#
-# classes for objects that perform state-space search on Eight Puzzles  
-#
-# name: Ramon Llarena
-# email: llar011@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
-#
-
 import random
 from state import *
 
@@ -20,7 +7,7 @@ class Searcher:
         This will also be used as a superclass of classes for
         other state-space search algorithms.
     """
-    ### Add your Searcher method definitions here. ###
+    ### Searcher method definitions here. ###
 
     def __init__(self, depth_limit):
         """ a constructor for a Searcher object """
@@ -78,7 +65,6 @@ class Searcher:
         """ returns a string representation of the Searcher object
             referred to by self.
         """
-        # You should *NOT* change this method.
         s = type(self).__name__ + ': '
         s += str(len(self.states)) + ' untested, '
         s += str(self.num_tested) + ' tested, '
@@ -88,8 +74,7 @@ class Searcher:
             s += 'depth limit = ' + str(self.depth_limit)
         return s
 
-
-### Add your BFSeacher and DFSearcher class definitions below. ###
+### BFSeacher and DFSearcher class definitions below. ###
 class BFSearcher(Searcher):
     """ performs breadth-first search (BFS) instead of random search """
     def next_state(self):
@@ -113,7 +98,7 @@ def h0(state):
     """ a heuristic function that always returns 0 """
     return 0
 
-### Add your other heuristic functions here. ###
+### Heuristic functions here. ###
 def h1(state):
     """ computes and returns an estimate of how many additional moves are
     needed to get from state to the goal state """
@@ -128,7 +113,7 @@ class GreedySearcher(Searcher):
     """ A class for objects that perform an informed greedy state-space
         search on an Eight Puzzle.
     """
-    ### Add your GreedySearcher method definitions here. ###
+    ### GreedySearcher method definitions here. ###
     def __init__(self, heuristic):
         """ constructor for a new GreedySearcher object """
         super(GreedySearcher, self).__init__(-1)
@@ -138,7 +123,6 @@ class GreedySearcher(Searcher):
         """ returns a string representation of the GreedySearcher object
             referred to by self.
         """
-        # You should *NOT* change this method.
         s = type(self).__name__ + ': '
         s += str(len(self.states)) + ' untested, '
         s += str(self.num_tested) + ' tested, '
