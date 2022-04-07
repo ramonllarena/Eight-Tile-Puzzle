@@ -16,8 +16,7 @@ def create_searcher(algorithm, param):
     
     if algorithm == 'random':
         searcher = Searcher(param)
-## You will uncommment the following lines as you implement
-## other algorithms.
+        
     elif algorithm == 'BFS':
         searcher = BFSearcher(param)
     elif algorithm == 'DFS':
