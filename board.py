@@ -30,7 +30,7 @@ class Board:
                     self.blank_r = r
                     self.blank_c = c
 
-    ### Add your other method definitions below. ###
+    ### Method definitions below. ###
     def __repr__(self):
         """ returns a string representation of a Board object """
         s = ''
