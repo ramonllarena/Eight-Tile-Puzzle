@@ -1,16 +1,3 @@
-#
-# eight_puzzle.py (Final project)
-#
-# driver/test code for state-space search on Eight Puzzles   
-#
-# name: Ramon Llarena
-# email: llar011@bu.edu
-#
-# If you worked with a partner, put their contact info below:
-# partner's name:
-# partner's email:
-#
-
 from searcher import *
 from timer import *
 
